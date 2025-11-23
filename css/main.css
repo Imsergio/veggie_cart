@@ -1,0 +1,50 @@
+/*=============== MAIN ===============*/
+.hero {
+    display: flex;
+    background: url(../assets/images/sitio/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--text-white);
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 12, 1, 0.816);
+}
+
+.hero__container {
+    position: relative;
+    z-index: 1;
+    grid-gap: 2rem;
+}
+
+.hero__title {
+    font-family: var(--font-Overlock);
+    color: var(--text-white);
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.hero__text {
+    font-family: var(--font-Vend-Sans);
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.hero__btn {
+    font-size: 1.4rem;
+    font-weight: 600;
+}

@@ -12,7 +12,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
+    z-index: 2;
     box-shadow: var(--shadow);
     transition: var(--transition);
 }

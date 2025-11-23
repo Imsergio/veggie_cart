@@ -8,6 +8,8 @@
 html { 
     scroll-behavior: smooth;
     font-size: 62.5%; /* 1rem = 10px */
+    text-wrap-mode: balance;
+    display: grid;
 }
 
 a { 
@@ -29,7 +31,7 @@ img {
 
 /* Colores */
     --primary-color: #4CAF50;
-    --accent-color: #FF6B6B;
+    --accent-color: #f96060;
     --text-dark: #333;
     --text-light: #666;
     --text-white: #ffffff;
@@ -57,4 +59,26 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+/* Botones */
+.btn-primary {
+    padding: 1.2rem;
+    border: none;
+    margin: auto;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    font-family: var(--font-Overlock);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
