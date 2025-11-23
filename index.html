@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platillos Veganos</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="assets/images/sitio/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/63dd77a3e8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <button class="header__menu--toggle bars" id="menuToggle"> 
+                <i class="bars__icon fas fa-bars"></i>
+            </button>
+            <div class="header__logo">
+                <h1 class="header__logo-text">Veggie</h1>
+            </div>
+            <nav class="header__nav nav" id="navMenu">
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#productos" class="nav__link">Productos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#nosotros" class="nav__link">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                <button class="header__menu--close nav__close" id="navClose">
+                    <i class="nav__close-icon fas fa-times"></i>
+                </button>
+            </nav>
+            <div class="header__cart cart" id="cart">
+                <div class="cart__content" id="cartIcon">
+                    <i class="cart__icon fas fa-shopping-cart"></i>
+                    <span class="cart__count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+    </main>
+    <footer class="footer" id="footer">
+    </footer>
+    <!--=============== MAIN JS ===============-->
+    <script src="js/header.js"></script>
+</body>
+</html>
