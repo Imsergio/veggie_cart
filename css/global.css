@@ -1,29 +1,3 @@
-/*=============== RESET ===============*/
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-}
-
-html { 
-    scroll-behavior: smooth;
-    font-size: 62.5%; /* 1rem = 10px */
-    text-wrap-mode: balance;
-    display: grid;
-}
-
-a { 
-    text-decoration: none;
-}
-
-ul { 
-    list-style: none; 
-}
-
-img { 
-    max-width: 100%; 
-}
-
 /*=============== VARIABLES CSS ===============*/
 :root {
 /* Altura del header */
@@ -48,6 +22,33 @@ img {
     --font-Vend-Sans: "Vend Sans", sans-serif;
     --font-Overlock: "Overlock", sans-serif;
     --font-Agbalumo: "Agbalumo", sans-serif;
+}
+
+/*=============== RESET ===============*/
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html { 
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* 1rem = 10px */
+    text-wrap-mode: balance;
+    display: grid;
+    font-family: var(--font-Vend-Sans);
+}
+
+a { 
+    text-decoration: none;
+}
+
+ul { 
+    list-style: none; 
+}
+
+img { 
+    max-width: 100%; 
 }
 
 /*=============== Utilidades ===============*/
@@ -82,3 +83,25 @@ img {
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
 }
+
+.section__title {
+    font-family: var(--font-Overlock);
+    color: var(--text-dark);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.section__title::after {
+content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    border: 2px dotted var(--primary-color);
+}
+
