@@ -1,4 +1,8 @@
 /*=============== MAIN ===============*/
+section {
+    margin: 4rem 0;
+}
+
 .hero {
     display: flex;
     background: url(../assets/images/sitio/hero.jpg);
@@ -152,6 +156,100 @@
 
 .about__badge i {
     color: var(--accent-color);
+}
+
+/*=============== PRODUCTS  ===============*/
+.products__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 100%;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.products__card {
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    justify-items: center;
+}
+
+.products__card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__info {
+    padding: 1.5rem;
+}
+
+.card__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.card__description {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+
+.card__price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Product Price Dual Currency */
+.product-price-dual {
+    margin: 1rem 0;
+}
+
+.card__price--usd {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.card__price--mxn {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.card__price--mxn::before {
+    content: "≈ ";
+    color: var(--text-light);
+}
+
+.card__button {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.card__button:hover {
+    background: #45a049;
 }
 
 /*
