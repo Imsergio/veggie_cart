@@ -1,7 +1,7 @@
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('navMenu'),
-      navToggle = document.getElementById('menuToggle'),
-      navClose = document.getElementById('navClose');
+    navToggle = document.getElementById('menuToggle'),
+    navClose = document.getElementById('navClose');
 
 /*===== MENU SHOW =====*/
 /* Valida si la constante existe */

@@ -39,6 +39,11 @@ html {
     font-family: var(--font-Vend-Sans);
 }
 
+body {
+    background: var(--bg-light);
+    font-size: 1.4rem;
+}
+
 a { 
     text-decoration: none;
 }
@@ -62,26 +67,31 @@ img {
     padding: 0 1rem;
 }
 
-/* Botones */
-.btn-primary {
+[class*="__btn"] {
     padding: 1.2rem;
     border: none;
     margin: auto;
+    font-family: var(--font-Overlock);
     border-radius: var(--border-radius);
-    cursor: pointer;
     transition: var(--transition);
+    cursor: pointer;
 }
 
-.btn-primary {
-    background: var(--accent-color);
-    font-family: var(--font-Overlock);
+/* Botones */
+.btn--primary {
+    background: var(--primary-color);
     color: white;
 }
 
-.btn-primary:hover {
-    background: #ff5252;
-    transform: translateY(-2px);
+.btn--primary:hover {
+    background: var(--accent-color);
     box-shadow: var(--shadow-hover);
+}
+
+section {
+    background: var(--bg-white);
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 .section__title {
@@ -105,3 +115,8 @@ content: '';
     border: 2px dotted var(--primary-color);
 }
 
+@media (min-width: 768px) {
+    body {
+    font-size: 1.5rem;
+    }
+}

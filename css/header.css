@@ -24,7 +24,7 @@
     padding: 1.5rem;
 }
 
-.header__menu--toggle {
+.header__menu-toggle {
     background: #ffffff;
     border: 1px solid lavender;
     cursor: pointer;
@@ -58,7 +58,7 @@ color: var(--primary-color);
 .header__nav {
     position: fixed;
     top: 0;
-    left: -100%; /* Oculta el menú fuera de la pantalla */
+    left: -100%;
     background-color: var(--bg-white);
     width: 60%;
     height: 100%;
@@ -72,7 +72,7 @@ color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.6rem; /* Tamaño de fuente base para enlaces */
+  font-size: 1.6rem;
   gap: 2rem;
 }
 
@@ -131,7 +131,7 @@ color: var(--primary-color);
     background-color: var(--primary-color);
 }
 
-.nav__link:hover, .cart__icon:hover, .header__menu--toggle:hover, .nav__close:hover {
+.nav__link:hover, .cart__icon:hover, .header__menu-toggle:hover, .nav__close:hover {
   color: var(--primary-color);
 }
 
@@ -151,17 +151,21 @@ color: var(--primary-color);
   left: 0;
 }
 
-.header__menu--close {
+.nav__menu-close {
   color: var(--primary-color);
+  display: flex;
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+  padding: .5rem;
 }
 
 /*
-481px — 768px: iPads, tablets
+768px: iPads, tablets
 */
-@media (min-width: 481px) {
-  /* Ocultamos los botones de abrir/cerrar menú */
-  .header__menu--toggle,
-  .header__menu--close {
+@media (min-width: 768px) {
+  .header__menu-toggle,
+  .nav__menu-close {
     display: none;
   }
 
@@ -172,7 +176,7 @@ color: var(--primary-color);
   }
 
   .header__nav {
-    justify-self: center; /* Centra la navegación en el espacio disponible */
+    justify-self: center;
     position: relative;
     width: 100%;
     padding: 1rem 2rem;
@@ -187,21 +191,11 @@ color: var(--primary-color);
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 2rem;
   }
 }
-
 /*
-769px — 1024px: pantallas pequeñas, ordenadores portátiles
-*/
-@media (min-width: 769px) {
-  .header__container {
-    gap: 3rem;
-  }
-
-}
-
-/*
-1025px — 1200px: pantallas grandes, ordenadores de escritorio
-1201px y más —  pantallas extra-grandes, televisores
+1025px - 1200px: pantallas grandes, ordenadores de escritorio
+1201px y más: pantallas extra-grandes, televisores
 */
 
