@@ -1,11 +1,12 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
-/* Altura del header */
-    --header-height: 3.5rem;
-
 /* Colores */
     --primary-color: #4CAF50;
-    --accent-color: #f96060;
+    --primary-color-hover: #146918;
+    --secondary-color: #607D8B;
+    --secondary-color-hover: #455A64;
+    --accent-color: #146918;
+    --cancel-color: #ff7675;
     --text-dark: #333;
     --text-light: #666;
     --text-white: #ffffff;
@@ -34,12 +35,12 @@
 html { 
     scroll-behavior: smooth;
     font-size: 62.5%; /* 1rem = 10px */
-    text-wrap-mode: balance;
-    display: grid;
+    text-wrap: balance; /* Propiedad actualizada, soporte limitado en navegadores */
     font-family: var(--font-Vend-Sans);
 }
 
 body {
+    display: grid;
     background: var(--bg-light);
     font-size: 1.4rem;
 }
@@ -58,7 +59,7 @@ img {
 
 /*=============== Utilidades ===============*/
 
-[class$="__container"] {
+.container { /* Selector simplificado para mayor claridad */
     width: 100%;
     display: grid;
     gap: 1rem;
@@ -67,25 +68,36 @@ img {
     padding: 0 1rem;
 }
 
-[class*="__btn"] {
+.btn { /* Clase base para botones, más estándar y legible */
     padding: 1.2rem;
     border: none;
-    margin: auto;
     font-family: var(--font-Overlock);
     border-radius: var(--border-radius);
     transition: var(--transition);
     cursor: pointer;
+    box-shadow: var(--shadow);
+}
+.btn:hover {
+    box-shadow: var(--shadow-hover);
 }
 
 /* Botones */
 .btn--primary {
     background: var(--primary-color);
-    color: white;
+    color: var(--text-white);
 }
 
 .btn--primary:hover {
-    background: var(--accent-color);
-    box-shadow: var(--shadow-hover);
+    background: var(--primary-color-hover);
+}
+
+.btn--secondary {
+    background: var(--secondary-color);
+    color: var(--text-white);
+}
+
+.btn--secondary:hover {
+    background: var(--secondary-color-hover);
 }
 
 section {
@@ -110,7 +122,7 @@ content: '';
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 40%; /* Ancho relativo para mejor adaptabilidad */
     height: 2px;
     border: 2px dotted var(--primary-color);
 }
@@ -119,4 +131,16 @@ content: '';
     body {
     font-size: 1.5rem;
     }
+}
+
+/*=============== MENU OVERLAY ===============*/
+body.menu-open::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
