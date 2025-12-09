@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Bowl Quinoa Power",
+            "description": "Quinoa con vegetales asados, aguacate y aderezo tahini",
+            "price": 12.99,
+            "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+            "category": "bowls"
+        },
+        {
+            "id": 2,
+            "name": "Hamburguesa Vegana",
+            "description": "Hamburguesa de garbanzos con lechuga, tomate y mayonesa vegana",
+            "price": 15.99,
+            "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&h=300&fit=crop",
+            "category": "hamburgers"
+        },
+        {
+            "id": 3,
+            "name": "Ensalada Mediterránea",
+            "description": "Mix de hojas verdes, tomate cherry, pepino y aceitunas",
+            "price": 10.99,
+            "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop",
+            "category": "salads"
+        },
+        {
+            "id": 4,
+            "name": "Wrap de Falafel",
+            "description": "Wrap con falafel, hummus, vegetales frescos y salsa de yogur vegano",
+            "price": 11.99,
+            "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop",
+            "category": "wraps"
+        },
+        {
+            "id": 5,
+            "name": "Smoothie Bowl",
+            "description": "Bowl de smoothie de frutas con granola y semillas",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400&h=300&fit=crop",
+            "category": "smoothies"
+        },
+        {
+            "id": 6,
+            "name": "Pasta Alfredo Vegana",
+            "description": "Pasta con salsa alfredo de anacardos y espinaca",
+            "price": 14.99,
+            "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop",
+            "category": "pasta"
+        }
+    ]
+}
