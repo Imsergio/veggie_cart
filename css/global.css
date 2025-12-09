@@ -12,6 +12,9 @@
     --text-white: #ffffff;
     --bg-light: #f8f8f8; 
     --bg-white: #ffffff;
+    --bg-overlay: rgba(0, 0, 0, 0.5);
+    --bg-subtle: ghostwhite;
+    --border-color-subtle: lavender;
 
 /* otras variables */
     --shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -119,10 +122,10 @@ section {
 .section__title::after {
 content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 40%; /* Ancho relativo para mejor adaptabilidad */
+    width: 10%;
     height: 2px;
     border: 2px dotted var(--primary-color);
 }
@@ -131,16 +134,4 @@ content: '';
     body {
     font-size: 1.5rem;
     }
-}
-
-/*=============== MENU OVERLAY ===============*/
-body.menu-open::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
 }
